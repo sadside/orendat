@@ -1,0 +1,207 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 21px 40px;
+}
+
+.search-input {
+  width: 630px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.searchBtn {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(255,0,0,1) !important;
+  &:hover {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.85) 50%) !important;
+  }
+}
+
+.weather {
+  margin-left: 192px;
+}
+
+.navbar-links {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.navbar-links {
+  width: 851px;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    margin-top: 15px;
+  }
+}
+
+.banner {
+  height: 400px;
+  width: 300px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.main-banner {
+  height: 100px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-new {
+  flex: 1 1 60%;
+}
+
+.another-news {
+  flex: 1 1 35%;
+}
+
+.main-new-img {
+  width: 100%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.main-new-title {
+  width: 540px;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.additional-info {
+  font-weight: 300;
+  span {
+    margin-right: 10px;
+  }
+}
+
+.sidebar-tabs {
+  margin-bottom: 28px;
+}
+
+.sidebar-tab {
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-right: 15px;
+
+  &.active::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #EB7813;
+    height: 2px;
+    right: 0;
+  }
+}
+
+
+.link {
+  color: #000000; /* Цвет обычной ссылки */
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline #EB7813;
+}
+
+.another-new {
+  border-bottom: 1px solid #ccc;
+}
+
+.left-column {
+  flex: 1 1 55%;
+}
+
+.rightColumn {
+  flex: 1 1 45%;
+}
+
+.item {
+  flex: 0 1 48%;
+}
+
+.bottom-title {
+  position: relative;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  width: max-content;
+
+  &::after {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    right: -150px;
+    content: 'Выбор читателей';
+    width: 150px;
+    height: 26px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: -5px;
+    border: 8px solid transparent;
+    border-top: 20px solid black;
+    transform: rotate(45deg);
+
+  }
+}
+
+.center-item {
+  height: 550px;
+
+  img:first-child {
+    height: 409px;
+    margin-bottom: 22px;
+  }
+
+}
+
+.side-item {
+  img:first-child {
+    margin-bottom: 15px;
+    width: 360px;
+    height: 298px;
+  }
+}
+
+footer {
+  background-color: #000;
+  padding: 21px 40px;
+}

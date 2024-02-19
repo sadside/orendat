@@ -1,0 +1,957 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/home-page.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="config/tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/itc-slider.css" />
+    <!-- JavaScript -->
+    <script src="/assets/js/itc-slider.js" defer></script>
+    <script src="scripts/index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="py-4 px-6 bg-navbarBg text-white" id="navbar">
+        <!--          navbar-->
+        <div
+          class="links flex font-normal text-sm space-x-4 active:text-amber-50 text-navbarTextColor"
+        >
+          <div>Сеть новостных сайтов:</div>
+          <a href="/">Оренбург</a>
+          <a href="">Соль-Илецк</a>
+          <a href="">Бузулук</a>
+          <a href="">Сорочинск</a>
+          <a href="">Переволоцкий</a>
+          <a href="">Новосергиевка</a>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="ml-4 mt-7">
+            <img src="assets/img/logo.png" alt="Orenday" />
+          </div>
+          <div class="input mt-8 flex ml-24">
+            <label>
+              <input
+                type="text"
+                class="search-input p-4 placeholder-gray-500 outline-none bg-white"
+                placeholder="Введите запрос..."
+              />
+            </label>
+            <div class="bg-white">
+              <button type="submit" class="searchBtn">Найти</button>
+            </div>
+          </div>
+          <div class="mt-8 weather flex items-center">
+            <img src="assets/img/weather.svg" alt="" />
+            <div class="ml-4">
+              <div>Погода</div>
+              <div>+3C</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-end">
+          <div class="navbar-links">
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Жизнь
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Власть
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Деньги
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Происшествия
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Здоровье
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Светская жизнь
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Отношения
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Технологии
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Авто
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Спорт
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Гороскоп
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              ЖКХ
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              Культура
+            </a>
+            <a
+              href="#"
+              class="hover:text-mainOrange transition-colors duration-200 active:text-mainOrange mr-5"
+            >
+              РОССИЯ
+            </a>
+          </div>
+          <div class="flex space-x-1.5">
+            <img src="assets/img/telega.svg" alt="" />
+            <img src="assets/img/yt.svg" alt="" />
+            <img src="assets/img/vk.svg" alt="" />
+            <img src="assets/img/dnokl.svg" alt="" />
+            <img src="assets/img/dzen.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="py-12 px-14">
+        <div class="flex justify-between">
+          <div class="flex-0">
+            <div class="banner">BANNER</div>
+            <aside class="sidebar bg-sidebarColor px-5 py-6">
+              <h2 class="font-semibold text-2xl mb-4">Последние новости</h2>
+              <div class="sidebar-tabs flex">
+                <button class="sidebar-tab active">Все</button>
+                <button class="sidebar-tab">Оренбург</button>
+              </div>
+              <div class="last-news"></div>
+            </aside>
+          </div>
+          <section class="flex-1 ml-10">
+            <div class="main-banner mb-7">BANNER</div>
+            <div class="flex flex-1">
+              <!--              main new-->
+              <div class="main-new">
+                <img
+                  src="assets/img/newImage.jpg"
+                  alt=""
+                  class="main-new-img"
+                />
+                <h2 class="main-new-title link">
+                  <a href=""
+                    >В Оренбурге в Степном 23 дома остались без тепла и горячей
+                    воды</a
+                  >
+                </h2>
+                <div class="flex additional-info">
+                  <span style="color: #8c8c8c">5 февраля</span>
+                  <span class="text-mainOrange">66:66</span>
+                  <img src="assets/img/comments.svg" alt="" />
+                  <span class="link text-mainOrange ml-1">Комментарии 28</span>
+                </div>
+              </div>
+              <div class="ml-10 font-times another-news">
+                <div class="another-new mb-6 pb-4">
+                  <img
+                    src="assets/img/newImage.jpg"
+                    alt=""
+                    class="mb-4 h-44 w-full object-cover"
+                  />
+                  <p class="text-base">
+                    <a href=""
+                      >Дороги перекрыты: погода в Оренбуржье решает, кому ехать,
+                      а кому сидеть дома</a
+                    >
+                  </p>
+                </div>
+                <div class="another-new mb-6 pb-4">
+                  <img
+                    src="assets/img/newImage.jpg"
+                    alt=""
+                    class="mb-4 h-44 w-full object-cover"
+                  />
+                  <p class="text-base">
+                    <a href=""
+                      >Дороги перекрыты: погода в Оренбуржье решает, кому ехать,
+                      а кому сидеть дома</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main-banner mt-6">BANNER</div>
+            <div class="itc-slider mt-12 mb-14" data-slider="itc-slider">
+              <div class="itc-slider-wrapper">
+                <div class="itc-slider-items">
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider1.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider2.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider3.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider1.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider2.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider3.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider1.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider2.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider3.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex mt-10">
+                <button class="itc-slider-btn itc-slider-btn-prev">
+                  <img src="assets/img/sliderRight.svg" alt="" />
+                </button>
+                <button class="itc-slider-btn itc-slider-btn-next ml-4">
+                  <img src="assets/img/sliderLeft.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="flex mb-12">
+              <div class="left-column mr-14">
+                <h2 class="font-semibold text-[28px] mb-7">Жизнь</h2>
+                <div class="flex flex-wrap justify-between text-base">
+                  <div class="item">
+                    <img
+                      src="assets/img/phone.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <p class="font-bold font-times">
+                      <a href=""
+                        >Оренбуржцы активно скупают умные колонки 123</a
+                      >
+                    </p>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="assets/img/phone.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <p class="font-bold font-times">
+                      <a href="">Оренбуржцы активно скупают умные колонки</a>
+                    </p>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="assets/img/phone.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <p class="font-bold font-times">
+                      <a href="">Оренбуржцы активно скупают умные колонки</a>
+                    </p>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="assets/img/phone.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <p class="font-bold font-times">
+                      <a href="">Оренбуржцы активно скупают умные колонки</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rightColumn space-y-7 font-bold">
+                <h2 class="font-semibold text-[28px] mb-7">Происшествия</h2>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex mb-10">
+              <div class="left-column space-y-7 font-bold mr-14">
+                <h2 class="font-semibold text-[28px] mb-7">Власть</h2>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+              </div>
+              <div class="rightColumn space-y-7 font-bold">
+                <h2 class="font-semibold text-[28px]">Экономика</h2>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="assets/img/test.png"
+                    alt=""
+                    class="object-cover h-full mr-5"
+                  />
+                  <p class="font-times text-base">
+                    <a href="">Мести в Оренбургской области будет всю неделю</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main-banner mb-10">BANNER</div>
+            <div class="itc-slider mb-14" data-slider="itc-slider">
+              <div class="itc-slider-wrapper">
+                <div class="itc-slider-items">
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider1.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider2.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider3.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider1.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider2.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider3.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider1.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider2.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img
+                      src="assets/img/slider3.png"
+                      class="w-full mb-4"
+                      alt=""
+                    />
+                    <h2
+                      class="h-20 border-b-[1px] border-gray-400 mb-2.5 font-times"
+                    >
+                      <a href="">В Оренбуржье ожидается теплый февраль</a>
+                    </h2>
+                    <div class="flex additional-info text-sm">
+                      <span style="color: #8c8c8c">5 февраля</span>
+                      <span class="text-mainOrange">66:66</span>
+                      <img src="assets/img/comments.svg" alt="" />
+                      <span class="link text-mainOrange ml-1"
+                        >Комментарии 28</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex mt-10">
+                <button class="itc-slider-btn itc-slider-btn-prev">
+                  <img src="assets/img/sliderRight.svg" alt="" />
+                </button>
+                <button class="itc-slider-btn itc-slider-btn-next ml-4">
+                  <img src="assets/img/sliderLeft.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="flex items-center justify-center mb-[75px]">
+          <h2 class="bottom-title">Тоже интересно</h2>
+        </div>
+        <div class="flex justify-between items-center gap-12">
+          <div class="side-item">
+            <img src="assets/img/newImage.jpg" alt="" />
+            <h2 class="font-times">
+              <a href=""
+                >В Оренбурге в Степном 23 дома остались без тепла и горячей
+                воды</a
+              >
+            </h2>
+            <div class="flex additional-info">
+              <span style="color: #8c8c8c">5 февраля</span>
+              <span class="text-mainOrange">66:66</span>
+              <img src="assets/img/comments.svg" alt="" />
+              <span class="link text-mainOrange ml-1">Комментарии 28</span>
+            </div>
+          </div>
+          <div class="center-item">
+            <img src="assets/img/newImage.jpg" alt="" class="center-item-img" />
+            <h2 class="font-times text-[26px]">
+              <a href=""
+                >В Оренбурге в Степном 23 дома остались без тепла и горячей
+                воды</a
+              >
+            </h2>
+            <div class="flex additional-info">
+              <span style="color: #8c8c8c">5 февраля</span>
+              <span class="text-mainOrange">66:66</span>
+              <img src="assets/img/comments.svg" alt="" />
+              <span class="link text-mainOrange ml-1">Комментарии 28</span>
+            </div>
+          </div>
+          <div class="side-item">
+            <img src="assets/img/newImage.jpg" alt="" />
+            <h2 class="font-times">
+              <a href=""
+                >В Оренбурге в Степном 23 дома остались без тепла и горячей
+                воды</a
+              >
+            </h2>
+            <div class="flex additional-info">
+              <span style="color: #8c8c8c">5 февраля</span>
+              <span class="text-mainOrange">66:66</span>
+              <img src="assets/img/comments.svg" alt="" />
+              <span class="link text-mainOrange ml-1">Комментарии 28</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-wrapper flex justify-between text-white">
+        <div class="font-medium">
+          <img src="assets/img/logo.png" alt="" class="mb-4" />
+          <a href="" class="underline">Свяжитесь с нами</a>
+          <div class="mt-2 mb-2.5">
+            Реклама на сайте: <br />
+            +7 (903) 3644474, kp@orenkp.ru <br />
+            Редакция: +7 (903) 3644474, kp@orenkp.ru
+          </div>
+          <div class="flex space-x-1.5 mb-7">
+            <img src="assets/img/telega.svg" alt="" />
+            <img src="assets/img/yt.svg" alt="" />
+            <img src="assets/img/vk.svg" alt="" />
+            <img src="assets/img/dnokl.svg" alt="" />
+            <img src="assets/img/dzen.svg" alt="" />
+          </div>
+          <div
+            class="h-[116px] w-24 flex justify-center items-center bg-gray-600 mb-8"
+          >
+            МЕТРИКА
+          </div>
+          <div class="flex items-center mb-6">
+            <div
+              class="rounded-full w-[50px] h-[50px] border-white border-2 flex items-center justify-center"
+            >
+              18+
+            </div>
+            <div class="font-bold ml-2.5">Возрастная категория <br />сайта</div>
+          </div>
+          <div class="mb-4">
+            Дизайн и разработка сайта -
+            <a
+              href="https://www.terehov.net"
+              target="_blank"
+              class="text-mainOrange"
+              >Terehov Design</a
+            >
+          </div>
+          <div class="mb-2.5">
+            <a href="" class="underline font-normal">Согласие на обработку</a>
+            <a href="" class="underline font-normal"
+              >Политика конфиденциальности</a
+            >
+          </div>
+          <div class="font-normal">
+            © 2008-2024 Новости Оренбурга Orenday. Все права защищены.
+          </div>
+        </div>
+        <div>
+          <h2 class="text-navbarTextColor text-2xl mb-4">МЕНЮ</h2>
+          <div class="space-y-2.5">
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+            <a href="" class="uppercase font-medium block">Жизнь</a>
+          </div>
+        </div>
+        <div class="w-[635px]">
+          <h2 class="text-navbarTextColor mb-4 text-xl">
+            Использование материалов
+          </h2>
+          <p class="font-normal">
+            Все права на опубликованные на сайте orenday.ru материалы охраняются
+            в соответствии с законодательством РФ. Любое использование
+            материалов допускается только по согласованию с Редакцией с
+            обязательной активной ссылкой на источник. <br />
+            Редакция не несет ответственности за достоверность рекламных
+            объявлений, размещенных на сайте orenday.ru, содержание веб-сайтов,
+            на которые даны гиперссылки, а также комментариев. Комментарии к
+            публикациям являются личным мнением пользователей сайта. <br />
+            <br />
+            Возрастная категория сайта: 18+
+            <br />
+            В России признаны экстремистскими и запрещены организации Движение
+            «Колумбайн», Meta (Instagram , Facebook), «Мужское государство», ФБК
+            (Фонд борьбы с коррупцией, признан иноагентом), Штабы Навального,
+            «Национал-большевистская партия», «Свидетели Иеговы», «Армия воли
+            народа», «Русский общенациональный союз», «Движение против
+            нелегальной иммиграции», «Правый сектор», УНА-УНСО, УПА, «Тризуб им.
+            Степана Бандеры», «Мизантропик дивижн», «Меджлис крымскотатарского
+            народа», движение «Артподготовка», общероссийская политическая
+            партия «Воля», АУЕ. Признаны террористическими и запрещены:
+            «Движение Талибан», «Имарат Кавказ», «Исламское государство» (ИГ,
+            ИГИЛ), Джебхад-ан-Нусра, «АУМ Синрике», «Братья-мусульмане»,
+            «Аль-Каида в странах исламского Магриба», «Сеть». В РФ признана
+            нежелательной деятельность «Открытой России». br
+            <br />
+            Запрещено для детей.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
